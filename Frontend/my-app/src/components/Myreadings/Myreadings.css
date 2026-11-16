@@ -1,0 +1,348 @@
+
+.readings-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.readings-subtitle {
+  font-size: 15px;
+  color: var(--muted);
+  margin: 6px 0 24px;
+}
+
+.readings-status {
+  padding: 32px 0;
+  text-align: center;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.readings-status-error,
+.readings-action-error {
+  color: var(--error);
+}
+
+.readings-action-error {
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+/* ===== Table card ===== */
+
+.readings-card {
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #e4ddf9;
+  border-radius: 16px;
+}
+
+.readings-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #e4ddf9;
+  border-radius: 12px;
+}
+
+.readings-table {
+  width: 100%;
+  min-width: 560px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 14px;
+}
+
+.readings-table th,
+.readings-table td {
+  padding: 14px 18px;
+  vertical-align: middle;
+}
+
+.readings-table th {
+  font-weight: 700;
+  color: var(--text);
+  background: var(--lavender-100);
+  white-space: nowrap;
+  text-align: left;
+}
+
+.readings-table td {
+  color: var(--text);
+  border-top: 1px solid #efeafb;
+  white-space: nowrap;
+}
+
+/* ===== Table column alignment ===== */
+
+.readings-table th:nth-child(1),
+.readings-table td:nth-child(1) {
+  width: 25%;
+  text-align: left;
+}
+
+.readings-table th:nth-child(2),
+.readings-table td:nth-child(2) {
+  width: 25%;
+  text-align: left;
+}
+
+.readings-table th:nth-child(3),
+.readings-table td:nth-child(3) {
+  width: 25%;
+  text-align: center;
+}
+
+.readings-table th:nth-child(4),
+.readings-table td:nth-child(4) {
+  width: 25%;
+  text-align: center;
+}
+
+.readings-table tbody tr:hover {
+  background: var(--lavender-50);
+}
+
+.col-center {
+  text-align: center !important;
+}
+
+/* ===== Edit and delete icons ===== */
+
+.row-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.icon-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.edit-btn {
+  background: transparent;
+  color: var(--purple-600);
+}
+
+.edit-btn:hover {
+  background: var(--lavender-100);
+}
+
+.delete-btn {
+  background: #fdecea;
+  color: #d92d20;
+}
+
+.delete-btn:hover {
+  background: #fad4cf;
+}
+
+.icon-btn:focus-visible {
+  outline: 3px solid rgba(109, 79, 214, 0.4);
+  outline-offset: 2px;
+}
+
+/* ===== Pagination ===== */
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.page-btn {
+  min-width: 36px;
+  height: 36px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.page-btn:hover:not(:disabled) {
+  background: var(--lavender-100);
+}
+
+.page-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.page-active {
+  color: #ffffff;
+  background: var(--purple-600);
+  border-color: var(--purple-600);
+}
+
+.page-active:hover:not(:disabled) {
+  background: var(--purple-700);
+}
+
+.page-btn:focus-visible {
+  outline: 3px solid rgba(109, 79, 214, 0.4);
+  outline-offset: 2px;
+}
+
+/* ===== Empty state ===== */
+
+.readings-empty {
+  padding: 36px 16px;
+  text-align: center;
+}
+
+.readings-empty-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.readings-empty-text {
+  font-size: 14px;
+  color: var(--muted);
+  margin: 4px 0 18px;
+}
+
+.readings-empty-btn {
+  display: inline-block;
+  padding: 11px 22px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  background: var(--purple-600);
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.readings-empty-btn:hover {
+  background: var(--purple-700);
+}
+
+/* ===== Delete confirmation ===== */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(31, 26, 77, 0.5);
+}
+
+.modal {
+  width: 100%;
+  max-width: 380px;
+  padding: 28px 24px 24px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(31, 26, 77, 0.25);
+}
+
+.modal-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #fdecea;
+  color: #d92d20;
+  font-size: 22px;
+}
+
+.modal-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.modal-text {
+  font-size: 14px;
+  color: var(--muted);
+  margin: 8px 0 22px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-cancel,
+.btn-delete {
+  flex: 1;
+  height: 44px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-cancel {
+  color: var(--text);
+  background: #ffffff;
+  border: 1px solid var(--text);
+}
+
+.btn-cancel:hover {
+  background: var(--lavender-50);
+}
+
+.btn-delete {
+  color: #ffffff;
+  background: #d92d20;
+  border: 1px solid #d92d20;
+}
+
+.btn-delete:hover:not(:disabled) {
+  background: #b42318;
+}
+
+.btn-delete:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-cancel:focus-visible,
+.btn-delete:focus-visible {
+  outline: 3px solid rgba(109, 79, 214, 0.4);
+  outline-offset: 2px;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 560px) {
+  .readings-title {
+    font-size: 24px;
+  }
+
+  .readings-card {
+    padding: 14px;
+  }
+
+  .modal-actions {
+    flex-direction: column-reverse;
+  }
+}

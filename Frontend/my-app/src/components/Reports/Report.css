@@ -1,0 +1,377 @@
+
+.rep-page {
+    padding: 28px;
+    min-height: 100vh;
+    background: #f8f7fc;
+    font-family: "Inter", "Segoe UI", sans-serif;
+    color: #30264b;
+}
+
+/* HEADER */
+
+.rep-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.rep-header-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 13px;
+    background: #eee7ff;
+    color: #7953c8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    flex-shrink: 0;
+}
+
+.rep-title {
+    margin: 0 0 6px;
+    font-size: 27px;
+    font-weight: 700;
+    color: #38295e;
+}
+
+.rep-subtitle {
+    margin: 0;
+    color: #8a8498;
+    font-size: 14px;
+}
+
+/* TABS */
+
+.rep-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.rep-tabs button {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 12px 19px;
+    background: #ffffff;
+    color: #716987;
+    border: 1px solid #e7e1f0;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.rep-tabs button:hover {
+    border-color: #8a68d1;
+    color: #7652c7;
+}
+
+.rep-tabs button.active {
+    background: #7652c7;
+    color: #ffffff;
+    border-color: #7652c7;
+}
+
+/* FILTER */
+
+.rep-filter {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 25px;
+}
+
+.rep-filter label {
+    color: #51476d;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.rep-filter input {
+    padding: 11px 13px;
+    border: 1px solid #ded7eb;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #403653;
+    outline: none;
+    font-size: 14px;
+}
+
+.rep-filter input:focus {
+    border-color: #8561cf;
+    box-shadow: 0 0 0 3px rgba(133, 97, 207, 0.1);
+}
+
+.rep-filter h3 {
+    margin: 0;
+    color: #61469d;
+    font-size: 18px;
+}
+
+/* STATISTICS CARDS */
+
+.rep-stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 17px;
+    margin-bottom: 25px;
+}
+
+.rep-stat-card {
+    background: #ffffff;
+    padding: 21px;
+    border: 1px solid #eeeaf5;
+    border-radius: 13px;
+    box-shadow: 0 3px 12px rgba(45, 32, 75, 0.04);
+    transition: transform 0.2s ease;
+}
+
+.rep-stat-card:hover {
+    transform: translateY(-3px);
+}
+
+.rep-stat-icon {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.rep-stat-icon.purple {
+    background: #eee7ff;
+    color: #7953c8;
+}
+
+.rep-stat-icon.blue {
+    background: #e7f2ff;
+    color: #4285cf;
+}
+
+.rep-stat-icon.red {
+    background: #ffebeb;
+    color: #dc6262;
+}
+
+.rep-stat-icon.green {
+    background: #e7f7ed;
+    color: #43a36a;
+}
+
+.rep-stat-card p {
+    color: #89829a;
+    font-size: 13px;
+    margin: 0 0 10px;
+}
+
+.rep-stat-card h2 {
+    color: #49357e;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0 0 4px;
+}
+
+.rep-stat-card small {
+    color: #9992a8;
+    font-size: 12px;
+}
+
+/* REPORT SECTION */
+
+.rep-section {
+    padding: 25px;
+    background: #ffffff;
+    border: 1px solid #eeeaf5;
+    border-radius: 13px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(45, 32, 75, 0.04);
+}
+
+.rep-section h2 {
+    color: #392d60;
+    font-size: 19px;
+    font-weight: 700;
+    margin: 0 0 7px;
+}
+
+.rep-section-subtitle {
+    color: #9992a8;
+    font-size: 13px;
+    margin: 0 0 22px;
+}
+
+/* TABLE */
+
+.rep-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.rep-table {
+    width: 100%;
+    min-width: 550px;
+    border-collapse: collapse;
+}
+
+.rep-table th {
+    background: #f6f3fc;
+    color: #62577d;
+    text-align: left;
+    padding: 14px;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.rep-table td {
+    padding: 15px 14px;
+    border-bottom: 1px solid #f0edf5;
+    color: #625c70;
+    font-size: 13px;
+}
+
+.rep-table tbody tr:hover {
+    background: #fbfaff;
+}
+
+.rep-table td strong {
+    color: #6446a9;
+    font-weight: 600;
+}
+
+/* WEEKLY CHART */
+
+.rep-chart {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    gap: 20px;
+    height: 220px;
+    padding: 20px 10px 10px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eeeaf5;
+}
+
+.rep-chart-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    flex: 1;
+    height: 100%;
+    max-width: 100px;
+}
+
+.rep-bar-area {
+    height: 140px;
+    width: 38px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.rep-bar {
+    width: 100%;
+    min-height: 5px;
+    background: linear-gradient(180deg, #a88ae8, #7652c7);
+    border-radius: 7px 7px 0 0;
+    transition: height 0.3s ease;
+}
+
+.rep-chart-item strong {
+    color: #574184;
+    font-size: 13px;
+}
+
+.rep-chart-item span {
+    color: #8b849a;
+    font-size: 12px;
+}
+
+/* LOADING AND EMPTY STATES */
+
+.rep-message,
+.rep-empty {
+    padding: 28px;
+    text-align: center;
+    color: #89829a;
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #eeeaf5;
+}
+
+.rep-error {
+    padding: 15px;
+    margin-bottom: 20px;
+    color: #b42318;
+    background: #fff1f0;
+    border: 1px solid #ffd5d2;
+    border-radius: 9px;
+    font-size: 14px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1000px) {
+    .rep-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .rep-page {
+        padding: 18px 14px;
+    }
+
+    .rep-title {
+        font-size: 23px;
+    }
+
+    .rep-header-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .rep-tabs {
+        gap: 8px;
+    }
+
+    .rep-tabs button {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+
+    .rep-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .rep-stat-card {
+        padding: 15px;
+    }
+
+    .rep-stat-card h2 {
+        font-size: 22px;
+    }
+
+    .rep-section {
+        padding: 17px 12px;
+    }
+
+    .rep-chart {
+        gap: 8px;
+    }
+
+    .rep-bar-area {
+        width: 28px;
+    }
+}

@@ -1,0 +1,20 @@
+:root {
+  --purple-700: #3f2596;
+  --purple-600: #4c2fb0;
+  --purple-500: #6d4fd6;
+  --lavender-100: #efebfb;
+  --lavender-50: #f6f3ff;
+  --border: #d9d3f0;
+  --card-border: #c8bcf0;
+  --text: #1f1a4d;
+  --muted: #6b6890;
+  --placeholder: #7c7899;
+  --error: #b42318;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
